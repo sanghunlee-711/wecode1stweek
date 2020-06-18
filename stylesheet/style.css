@@ -105,6 +105,14 @@ background-color: whitesmoke;
     align-items: center;
     
 }
+.content_box_button_button{
+    text-decoration: none;
+    
+    text-emphasis: none;
+    
+    text-decoration-color: black;
+    
+}
 
 button{
     border-radius: 40px solid white;

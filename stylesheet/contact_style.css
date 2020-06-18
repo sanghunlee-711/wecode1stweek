@@ -136,7 +136,7 @@
     
     }
     
-    /*Body css start*/
+    /*content css start*/
     
     
     
@@ -158,13 +158,9 @@
     
     
     #contact_form_image{
-    
     width: 300px;
-    
     height: 280px;
-    
     border-radius: 100%;
-    
     }
     
     
@@ -174,14 +170,17 @@
     
     }
     
-    
+    #input_button:hover{
+        color: black;
+
+    }
     #mail_submit{
     
     text-decoration: none;
     
     text-emphasis: none;
     
-    text-decoration-color: aqua;
+    text-decoration-color: black;
     
     }
     
