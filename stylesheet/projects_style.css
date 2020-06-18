@@ -10,6 +10,23 @@
     ;
 }
 
+.home{
+    
+    text-decoration: none;
+    
+    color: black;
+    
+    }
+    
+    
+.home:hover{
+
+color: darksalmon;
+
+background-color: whitesmoke;
+
+}
+
 .name{
     grid-area: name;
     background-color: white;
@@ -17,8 +34,17 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    text-decoration: none;
 
 }
+#name_link:hover{
+    color: darksalmon;
+    background-color: whitesmoke;
+    
+}
+
+
+
 
 .nav{
     grid-area: nav;
@@ -63,82 +89,36 @@
     background-color: whitesmoke;
 }
 
+/*content start*/
+
 .content{
     grid-area:content;
     background: #faf7f7;
     font-family: 'Montserrat', sans-serif; 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
+    justify-content: center;  
+    padding: 10px; 
 }
-
-.content_box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-button{
-    border-radius: 40px solid white;
-    font-size: 10px;
-    height: 25px;
-    width: 100px;
-    background-color: faf7f7;
-    color: black;
-}
-
-.content_box_image{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 350px;
-    width: 250px;
-    background-color: white;
-
-}
-
-#mypicture{
-    width: 130px ;
-    height: 130px;
-    border: 10px;
-    border-radius: 100px;
-
-}
-
-.content_box_hello{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 350px;
-    width: 300px;
-    background-color: whitesmoke;
-
-}
-#Hello{
-    font-size: 50px;
-    align-self: center;
-}
-
-#here{
-    font-size: 1fr;
-    font-display: space-around;
-    align-self: center;
-}
-
-#blah{
-    font-size: 10px;
-}
-
-.content_box_button{
+.content_aboutme_text{
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;  
     align-items: center;
-    justify-content: space-evenly;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.0vh; /*vh do change depeding on screen size*/
+
 }
+.content_picture{
+    border-radius: 100%;
+}
+
+.content_picture_text{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*footer start*/
 .footer{
     display: grid;
     font-size: 10px;

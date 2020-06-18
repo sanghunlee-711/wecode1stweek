@@ -10,6 +10,23 @@
     ;
 }
 
+.home{
+    
+    text-decoration: none;
+    
+    color: black;
+    
+    }
+    
+    
+.home:hover{
+
+color: darksalmon;
+
+background-color: whitesmoke;
+
+}
+
 .name{
     grid-area: name;
     background-color: white;
@@ -17,8 +34,17 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    text-decoration: none;
 
 }
+#name_link:hover{
+    color: darksalmon;
+    background-color: whitesmoke;
+    
+}
+
+
+
 
 .nav{
     grid-area: nav;
@@ -63,6 +89,8 @@
     background-color: whitesmoke;
 }
 
+/*content start*/
+
 .content{
     grid-area:content;
     background: #faf7f7;
@@ -70,75 +98,115 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    align-items: center;  
+    padding: 10px; 
 }
-
-.content_box{
+.introduce{
+    display: flex;
+    flex-direction: raw;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid white ;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.specific_detail{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.content_introduce_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.etc{
+    display: flex;
+    flex-direction: raw;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_etc_list{
+    list-style: none;
+    background-color: faf7f7;
+    line-height: 0.5fr;
+
+}
+
+.content_skills{
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 10px solid white ;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+}
+
+.skills_explain{
+    text-align: center;
+
+}
+
+
+.content_skills_border{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+
+.skills_box{
+    display: flex;
+    flex-direction:column ;
+    margin-left: 20px;
+}
+
+.skills_box ul li{
+    list-style: none;
+
+}
+.content_education_border{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid white ;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+
+}
+
+.content_education{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     
 }
 
-button{
-    border-radius: 40px solid white;
-    font-size: 10px;
-    height: 25px;
-    width: 100px;
+.skills_explain{
+    display: flex;
+    width: min-content;
+    height: min-content;
     background-color: faf7f7;
-    color: black;
 }
 
-.content_box_image{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 350px;
-    width: 250px;
-    background-color: white;
-
-}
-
-#mypicture{
-    width: 130px ;
-    height: 130px;
-    border: 10px;
-    border-radius: 100px;
-
-}
-
-.content_box_hello{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 350px;
-    width: 300px;
-    background-color: whitesmoke;
-
-}
-#Hello{
-    font-size: 50px;
-    align-self: center;
-}
-
-#here{
-    font-size: 1fr;
-    font-display: space-around;
-    align-self: center;
-}
-
-#blah{
-    font-size: 10px;
-}
-
-.content_box_button{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
+/*footer start*/
 .footer{
     display: grid;
     font-size: 10px;
@@ -147,6 +215,7 @@ button{
     font-family: 'Montserrat', sans-serif; 
     grid-template: 
     "copy_right contact"
+
 }
 .copy_right{
     grid-area:copy_right;
