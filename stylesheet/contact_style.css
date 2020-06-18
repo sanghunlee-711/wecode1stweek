@@ -1,0 +1,329 @@
+.grid{
+
+    display:grid;
+    
+    background-color: white;
+    
+    gap : 5px;
+    
+    height: 100vh;
+    
+    grid-template:
+    
+    "name nav" 0.5fr
+    
+    "contact_form contact_form" 4fr
+    
+    "footer footer" 0.5fr
+    
+    ;
+    
+    }
+    
+    
+    /*Header css start*/
+    
+    .name{
+    
+    grid-area: name;
+    
+    background-color: white;
+    
+    font-family: 'Montserrat', sans-serif;
+    
+    display: flex;
+    
+    justify-content: flex-start;
+    
+    align-items: center;
+    
+    
+    }
+    
+    
+    .nav{
+    
+    grid-area: nav;
+    
+    background-color: white;
+    
+    font-family: 'Montserrat', sans-serif;
+    
+    display: flex;
+    
+    justify-content: flex-end;
+    
+    align-items: center;
+    
+    
+    
+    }
+    
+    #menu{
+    
+    display: flex;
+    
+    flex-direction: row;
+    
+    justify-content: flex-end;
+    
+    align-items: flex-end;
+    
+    }
+    
+    
+    
+    #menu ul li {
+    
+    list-style: none;
+    
+    color: bisque;
+    
+    background-color: white;
+    
+    float: left;
+    
+    line-height: 12px;
+    
+    vertical-align: middle;
+    
+    text-align: center;
+    
+    }
+    
+    .home{
+    
+    text-decoration: none;
+    
+    color: black;
+    
+    }
+    
+    
+    .home:hover{
+    
+    color: darksalmon;
+    
+    background-color: whitesmoke;
+    
+    }
+    
+    
+    #menu .menu_link {
+    
+    text-decoration: cornflowerblue;
+    
+    color:black;
+    
+    display: flex;
+    
+    width: 80px;
+    
+    font-size: 12px;
+    
+    justify-content: flex-end;
+    
+    align-content: flex-end;
+    
+    }
+    
+    
+    #menu .menu_link:hover{
+    
+    color: darksalmon;
+    
+    background-color: whitesmoke;
+    
+    }
+    
+    /*Body css start*/
+    
+    
+    
+    .contact_form{
+    
+    display: flex;
+    
+    justify-content: center;
+    
+    align-items: center;
+    
+    grid-area: contact_form;
+    
+    font-family: 'Montserrat', sans-serif;
+    
+    color: rgb(182, 182, 197);
+    
+    }
+    
+    
+    #contact_form_image{
+    
+    width: 300px;
+    
+    height: 280px;
+    
+    border-radius: 100%;
+    
+    }
+    
+    
+    .content_picture_text{
+    
+    width: min-content;
+    
+    }
+    
+    
+    #mail_submit{
+    
+    text-decoration: none;
+    
+    text-emphasis: none;
+    
+    text-decoration-color: aqua;
+    
+    }
+    
+    #input_text{
+    
+    height: 140px;
+    
+    }
+    
+    
+    
+    
+    /*footer CSS Start*/
+    
+    .footer{
+    
+    display: grid;
+    
+    font-size: 10px;
+    
+    grid-area:footer;
+    
+    background-color: white;
+    
+    font-family: 'Montserrat', sans-serif;
+    
+    grid-template:
+    
+    "copy_right contact"
+    
+    }
+    
+    .copy_right{
+    
+    grid-area:copy_right;
+    
+    display: flex;
+    
+    justify-content: flex-start;
+    
+    align-items: center;
+    
+    font-family: 'Montserrat', sans-serif;
+    
+    }
+    
+    
+    
+    .contact{
+    
+    grid-area:contact;
+    
+    display: flex;
+    
+    flex-direction: row;
+    
+    justify-content: flex-end;
+    
+    align-items: flex-start;
+    
+    
+    }
+    
+    
+    .phone{
+    
+    display: flex;
+    
+    flex-direction: column;
+    
+    align-items: center;
+    
+    justify-content: center;
+    
+    width: 110px;
+    
+    }
+    
+    #call{
+    
+    align-self: center;
+    
+    }
+    
+    
+    .mail{
+    
+    display: flex;
+    
+    flex-direction: column;
+    
+    align-items: center;
+    
+    justify-content: center;
+    
+    width: 110px;
+    
+    }
+    
+    
+    #write{
+    
+    align-self: center;
+    
+    }
+    
+    
+    .sns{
+    
+    display: flex;
+    
+    flex-direction: column;
+    
+    justify-content: center;
+    
+    width: 110px;
+    
+    }
+    
+    #follow{
+    
+    align-self:center;
+    
+    }
+    
+    .sns_image{
+    
+    align-self: center;
+    
+    }
+    
+    
+    .contact_form{
+    
+    display: flex;
+    
+    flex-direction: column;
+    
+    justify-content: center;
+    
+    align-items: center;
+    
+    background-color: #faf7f7;
+    
+    }
