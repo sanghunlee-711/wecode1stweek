@@ -1,7 +1,7 @@
 .grid{
     display:grid;
     background-color: white;
-    gap : 5px;
+    gap : 5%;
     height: 100vh;
     grid-template:
     "head_wrapper head_wrapper" 0.5fr
@@ -12,12 +12,12 @@
 
 .head_wrapper{
     position: fixed;
-    top:0px;
+    top:0%;
     width: 98%;
     height: 20%;
-    padding:  0px;
     grid-area: head_wrapper;
     align-items: center;
+
     
 
 
@@ -26,7 +26,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
     width: 100%;
     background-color: white;
 
@@ -120,7 +119,7 @@ background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     justify-content: center;  
-    padding: 10px; 
+    padding-top: 2%;
 }
 .content_aboutme_text{
     display: flex;
@@ -142,6 +141,7 @@ background-color: whitesmoke;
 
 /*footer start*/
 .footer{
+    padding-top: 3%;
     display: grid;
     font-size: 10px;
     grid-area:footer;
