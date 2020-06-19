@@ -4,12 +4,34 @@
     gap : 5px;
     height: 100vh;
     grid-template:
-    "name nav" 0.5fr
+    "head_wrapper head_wrapper" 0.5fr
     "content content" 4fr
     "footer footer" 0.5fr
     ;
 }
 
+.head_wrapper{
+    position: fixed;
+    top:0px;
+    width: 98%;
+    height: 20%;
+    padding:  0px;
+    grid-area: head_wrapper;
+    align-items: center;
+    
+
+
+}
+.head_wrapper_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+    background-color: white;
+
+
+}
 .home{
     
     text-decoration: none;
