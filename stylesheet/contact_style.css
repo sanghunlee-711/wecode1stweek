@@ -19,9 +19,34 @@
     ;
     
     }
+
+
     
     
     /*Header css start*/
+
+    .head_wrapper{
+        position: fixed;
+        top:0px;
+        width: 98%;
+        height: 20%;
+        padding:  0px;
+    
+        align-items: center;
+        
+    
+    
+    }
+    .head_wrapper_content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        background-color: white;
+    
+    
+    }
+    
     
     .name{
     
