@@ -83,6 +83,8 @@ background-color: whitesmoke;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
+    top:0%;
+    left: 0%;
 }
 
 
@@ -94,6 +96,7 @@ background-color: whitesmoke;
     line-height: 12px;
     vertical-align: middle;
     text-align: center;
+    left: 0%;
 }
 
 #menu .menu_link {
@@ -121,7 +124,7 @@ background-color: whitesmoke;
     flex-direction: column;
     justify-content: center;
     align-items: center;  
-    padding: 10px; 
+    padding: 1%; 
     margin-top: 2%;
 }
 .introduce{
@@ -130,10 +133,10 @@ background-color: whitesmoke;
     justify-content: center;
     align-items: center;
     border: 10px solid white ;
-    border-top-left-radius: 2em;
-    border-top-right-radius: 2em;
-    border-bottom-right-radius: 2em;
-    border-bottom-left-radius: 2em;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
     padding: 20px;
     margin-bottom: 10px;
 }

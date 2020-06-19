@@ -75,8 +75,8 @@ background-color: whitesmoke;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-end;
-    top: 0px;
-    left: 0px;
+    top: 0%;
+    left: 0%;
 }
 
 
@@ -88,7 +88,7 @@ background-color: whitesmoke;
     line-height: 12px;
     vertical-align: middle;
     text-align: center;
-    left: 0px;
+    left: 0%;
     
 }
 
@@ -107,6 +107,8 @@ background-color: whitesmoke;
     background-color: whitesmoke;
 }
 
+
+/*content start*/
 .content{
     grid-area:content;
     background: #faf7f7;
@@ -114,7 +116,8 @@ background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    padding:1%
+    margin-top: 2%;
 }
 
 .content_box{
@@ -132,13 +135,13 @@ background-color: whitesmoke;
     display: inline-block;
     cursor: pointer;
     border-radius:  100% solid white;
-    font-size: 10px;
-    height: 25px;
-    width: 100px;    
-    border-top-left-radius: 2em;
-    border-top-right-radius: 2em;
-    border-bottom-right-radius: 2em;
-    border-bottom-left-radius: 2em;
+    font-size: 10%;
+    height: 110%;
+    width: 300%;    
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
 }
 
 a{
@@ -153,8 +156,8 @@ a{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 350px;
-    width: 250px;
+    height: 170%;
+    width: 25%;
     background-color: white;
 
 }
@@ -172,13 +175,13 @@ a{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 350px;
-    width: 300px;
+    height: 170%;
+    width: 25%;
     background-color: whitesmoke;
 
 }
 #Hello{
-    font-size: 50px;
+    font-size: 300%;
     align-self: center;
 }
 
@@ -189,7 +192,7 @@ a{
 }
 
 #blah{
-    font-size: 10px;
+    font-size: 20%;
 }
 
 .content_box_button{
