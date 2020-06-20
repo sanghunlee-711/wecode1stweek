@@ -1,7 +1,6 @@
 .grid{
     display:grid;
-    background-color: white;
-    gap : 5px;
+    background-color: white; 
     height: 100vh;
     grid-template:
     "head_wrapper head_wrapper" 0.5fr
@@ -12,10 +11,10 @@
 
 .head_wrapper{
     position: fixed;
-    top:0px;
+    top:0%;
     width: 99%;
     height: 20%;
-    margin-bottom: 5px;
+    margin-bottom: 1%;
     grid-area: head_wrapper;
     align-items: center;
 }
@@ -23,7 +22,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
     width: 100%;
     background-color: white;
 }
@@ -31,13 +29,11 @@
 .home{
     text-decoration: none;
     color: black;
-    }
+}
     
     
 .home:hover{
-
 color: darksalmon;
-
 background-color: whitesmoke;
 
 }
@@ -50,15 +46,12 @@ background-color: whitesmoke;
     justify-content: flex-start;
     align-items: center;
     text-decoration: none;
-
 }
+
 #name_link:hover{
     color: darksalmon;
     background-color: whitesmoke
 }
-
-
-
 
 .nav{
     grid-area: nav;
@@ -66,8 +59,7 @@ background-color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-    
+    align-items: center; 
 }
 
 #menu{
@@ -96,9 +88,9 @@ background-color: whitesmoke;
     text-decoration: cornflowerblue;
     color:black;
     display: flex;
-    width: 80px;
-    font-size: 12px;
-    justify-content: flex-end;
+    width: 80px; /*얘는 수정 안되겠다*/
+    font-size: 70%;
+    justify-content: space-between;
     align-content: flex-end;
 }
 
@@ -136,8 +128,8 @@ background-color: whitesmoke;
     cursor: pointer;
     border-radius:  100% solid white;
     font-size: 10%;
-    height: 110%;
-    width: 300%;    
+    height: 2.5vh;
+    width: 100%;    
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
@@ -163,12 +155,23 @@ a{
 }
 
 #mypicture{
+    /*
     width: 130px ;
     height: 130px;
-    border: 10px;
-    border-radius: 100px;
+    */
+    width: 40%;
+    height: 100%;
+    border-radius: 100%;
+    align-self: center;
 
 }
+#pictureofme{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
 
 .content_box_hello{
     display:flex;
