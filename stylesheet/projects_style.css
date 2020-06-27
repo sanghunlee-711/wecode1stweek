@@ -5,7 +5,213 @@
 
 @media (min-width: 1281px) {
   
-    //CSS
+    .grid{
+        display:grid;
+        background-color: white;
+        gap : 5px;
+        height: 100vh;
+       
+        grid-template:
+        "head_wrapper head_wrapper" 0.5fr
+        "content content" 4fr
+        "footer footer" 0.5fr
+        ;
+    }
+    
+    .head_wrapper{
+        position: fixed;
+        top:0px;
+        width: 99%;
+        height: 10%;
+        grid-area: head_wrapper;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    .head_wrapper_content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        width: 100%;
+        background-color: white;
+    
+    
+    }
+    
+    .home{
+        
+        text-decoration: none;
+        
+        color: black;
+        
+        }
+        
+        
+    .home:hover{
+    
+    color: darksalmon;
+    
+    background-color: whitesmoke;
+    
+    }
+    
+    .name{
+        grid-area: name;
+        background-color: white;
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+    
+    }
+    #name_link:hover{
+        color: darksalmon;
+        background-color: whitesmoke;
+        
+    }
+    
+    
+    
+    
+    .nav{
+        grid-area: nav;
+        background-color: white;
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    
+    
+    }
+    #menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    
+    
+    #menu ul li {
+        list-style: none;
+        color: bisque;
+        background-color: white;
+        float: left;
+        line-height: 12px;
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+    #menu .menu_link {
+        text-decoration: cornflowerblue;
+        color:black;
+        display: flex;
+        width: 80px;
+        font-size: 12px;
+        justify-content: flex-end;
+        align-content: flex-end;
+    }
+    
+    #menu .menu_link:hover{
+        color: darksalmon;
+        background-color: whitesmoke;
+    }
+    
+    /*content start*/
+    
+    .content{
+        grid-area:content;
+        background: #faf7f7;
+        font-family: 'Montserrat', sans-serif; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        align-items: center;
+        padding-top: 1px; 
+    }
+    .content_aboutme_text{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;  
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.0vh; /*vh do change depeding on screen size*/
+    
+    }
+    .content_picture{
+        border-radius: 100%;
+    }
+    
+    .content_picture_text{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    /*footer start*/
+    .footer{
+        padding-top: 3%;
+        display: grid;
+        font-size: 10px;
+        grid-area:footer;
+        background-color: white;
+        font-family: 'Montserrat', sans-serif; 
+        grid-template: 
+        "copy_right contact"
+    }
+    .copy_right{
+        grid-area:copy_right;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-family: 'Montserrat', sans-serif; 
+    }
+    
+    
+    .contact{
+        grid-area:contact;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
+    
+        
+    }
+    
+    .phone{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+    }
+    #call{
+        align-self: center;
+    }
+    
+    .mail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+    }
+    
+    #write{
+        align-self: center;
+    }
+    
+    .sns{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 110px;
+    }
+    #follow{
+        align-self:center;
+    }
+    .sns_image{
+        align-self: center;
+    }
     
   }
   
@@ -16,7 +222,212 @@
   
   @media (min-width: 1025px) and (max-width: 1280px) {
     
-    //CSS
+    .grid{
+        display:grid;
+        background-color: white;
+        gap : 5px;
+        height: 100vh;
+        grid-template:
+        "head_wrapper head_wrapper" 0.5fr
+        "content content" 4fr
+        "footer footer" 0.5fr
+        ;
+    }
+    
+    .head_wrapper{
+        position: fixed;
+        top:0px;
+        width: 99%;
+        height: 20%;
+        grid-area: head_wrapper;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    .head_wrapper_content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        width: 100%;
+        background-color: white;
+    
+    
+    }
+    
+    .home{
+        
+        text-decoration: none;
+        
+        color: black;
+        
+        }
+        
+        
+    .home:hover{
+    
+    color: darksalmon;
+    
+    background-color: whitesmoke;
+    
+    }
+    
+    .name{
+        grid-area: name;
+        background-color: white;
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+    
+    }
+    #name_link:hover{
+        color: darksalmon;
+        background-color: whitesmoke;
+        
+    }
+    
+    
+    
+    
+    .nav{
+        grid-area: nav;
+        background-color: white;
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    
+    
+    }
+    #menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    
+    
+    #menu ul li {
+        list-style: none;
+        color: bisque;
+        background-color: white;
+        float: left;
+        line-height: 12px;
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+    #menu .menu_link {
+        text-decoration: cornflowerblue;
+        color:black;
+        display: flex;
+        width: 80px;
+        font-size: 12px;
+        justify-content: flex-end;
+        align-content: flex-end;
+    }
+    
+    #menu .menu_link:hover{
+        color: darksalmon;
+        background-color: whitesmoke;
+    }
+    
+    /*content start*/
+    
+    .content{
+        grid-area:content;
+        background: #faf7f7;
+        font-family: 'Montserrat', sans-serif; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        align-items: center;
+        padding-top: 10px; 
+    }
+    .content_aboutme_text{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;  
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.0vh; /*vh do change depeding on screen size*/
+    
+    }
+    .content_picture{
+        border-radius: 100%;
+    }
+    
+    .content_picture_text{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    /*footer start*/
+    .footer{
+        padding-top: 3%;
+        display: grid;
+        font-size: 10px;
+        grid-area:footer;
+        background-color: white;
+        font-family: 'Montserrat', sans-serif; 
+        grid-template: 
+        "copy_right contact"
+    }
+    .copy_right{
+        grid-area:copy_right;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-family: 'Montserrat', sans-serif; 
+    }
+    
+    
+    .contact{
+        grid-area:contact;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
+    
+        
+    }
+    
+    .phone{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+    }
+    #call{
+        align-self: center;
+    }
+    
+    .mail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+    }
+    
+    #write{
+        align-self: center;
+    }
+    
+    .sns{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 110px;
+    }
+    #follow{
+        align-self:center;
+    }
+    .sns_image{
+        align-self: center;
+    }
     
   }
   
@@ -60,214 +471,218 @@
   
   @media (min-width: 320px) and (max-width: 480px) {
     
-    //CSS
+    .html{
+        height: 100%;
+        width: 100%;
+    }
+    .grid{
+        display:grid;
+        background-color: white;
+        gap : 0px;
+        height: 100%;
+        grid-template:
+        "head_wrapper head_wrapper" 0.5fr
+        "content content" 4fr
+        "footer footer" 0.5fr
+        ;
+    }
     
-  }
-
-.grid{
-    display:grid;
-    background-color: white;
-    gap : 5px;
-    height: 100vh;
-    grid-template:
-    "head_wrapper head_wrapper" 0.5fr
-    "content content" 4fr
-    "footer footer" 0.5fr
-    ;
-}
-
-.head_wrapper{
-    position: fixed;
-    top:0px;
-    width: 99%;
-    height: 20%;
-    grid-area: head_wrapper;
-    align-items: center;
-    margin-bottom: 5px;
-}
-.head_wrapper_content{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    width: 100%;
-    background-color: white;
-
-
-}
-
-.home{
+    .head_wrapper{
+        position: fixed;
+        top:0px;
+        width: 99%;
+        height: 20%;
+        grid-area: head_wrapper;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    .head_wrapper_content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     
-    text-decoration: none;
+        width: 100%;
+        background-color: white;
     
-    color: black;
     
     }
     
+    .home{
+        
+        text-decoration: none;
+        
+        color: black;
+        
+        }
+        
+        
+    .home:hover{
     
-.home:hover{
-
-color: darksalmon;
-
-background-color: whitesmoke;
-
-}
-
-.name{
-    grid-area: name;
-    background-color: white;
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    text-decoration: none;
-
-}
-#name_link:hover{
     color: darksalmon;
+    
     background-color: whitesmoke;
     
-}
-
-
-
-
-.nav{
-    grid-area: nav;
-    background-color: white;
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-
-}
-#menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
-
-#menu ul li {
-    list-style: none;
-    color: bisque;
-    background-color: white;
-    float: left;
-    line-height: 12px;
-    vertical-align: middle;
-    text-align: center;
-}
-
-#menu .menu_link {
-    text-decoration: cornflowerblue;
-    color:black;
-    display: flex;
-    width: 80px;
-    font-size: 12px;
-    justify-content: flex-end;
-    align-content: flex-end;
-}
-
-#menu .menu_link:hover{
-    color: darksalmon;
-    background-color: whitesmoke;
-}
-
-/*content start*/
-
-.content{
-    grid-area:content;
-    background: #faf7f7;
-    font-family: 'Montserrat', sans-serif; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  
-    align-items: center;
-    padding-top: 10px; 
-}
-.content_aboutme_text{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;  
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.0vh; /*vh do change depeding on screen size*/
-
-}
-.content_picture{
-    border-radius: 100%;
-}
-
-.content_picture_text{
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-/*footer start*/
-.footer{
-    padding-top: 3%;
-    display: grid;
-    font-size: 10px;
-    grid-area:footer;
-    background-color: white;
-    font-family: 'Montserrat', sans-serif; 
-    grid-template: 
-    "copy_right contact"
-}
-.copy_right{
-    grid-area:copy_right;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    font-family: 'Montserrat', sans-serif; 
-}
-
-
-.contact{
-    grid-area:contact;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-start;
-
+    }
     
-}
+    .name{
+        grid-area: name;
+        background-color: white;
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+    
+    }
+    #name_link:hover{
+        color: darksalmon;
+        background-color: whitesmoke;
+        
+    }
+    
+    
+    
+    
+    .nav{
+        grid-area: nav;
+        background-color: white;
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    
+    
+    }
+    #menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    
+    
+    #menu ul li {
+        list-style: none;
+        color: bisque;
+        background-color: white;
+        float: left;
+        line-height: 6px;
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+    #menu .menu_link {
+        text-decoration: cornflowerblue;
+        color:black;
+        display: flex;
+        width: 80px;
+        font-size: 12px;
+        justify-content: flex-end;
+        align-content: flex-end;
+    }
+    
+    #menu .menu_link:hover{
+        color: darksalmon;
+        background-color: whitesmoke;
+    }
+    
+    /*content start*/
+    
+    .content{
+        grid-area:content;
+        background: #faf7f7;
+        font-family: 'Montserrat', sans-serif; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        align-items: center;
+        padding-top: 10px; 
+    }
+    .content_aboutme_text{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;  
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px; /*vh do change depeding on screen size*/
+    
+    }
+    .content_picture{
+        border-radius: 100%;
+    }
+    
+    .content_picture_text{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    /*footer start*/
+    .footer{
+        padding-top: 3px;
+        display: grid;
+        font-size: 5px;
+        grid-area:footer;
+        background-color: white;
+        font-family: 'Montserrat', sans-serif; 
+        grid-template: 
+        "copy_right contact"
+    }
+    .copy_right{
+        grid-area:copy_right;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-family: 'Montserrat', sans-serif; 
+    }
+    
+    
+    .contact{
+        grid-area:contact;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
+    
+        
+    }
+    
+    .phone{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+    }
+    #call{
+        align-self: center;
+    }
+    
+    .mail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+    }
+    
+    #write{
+        align-self: center;
+    }
+    
+    .sns{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 110px;
+    }
+    #follow{
+        align-self:center;
+    }
+    .sns_image{
+        align-self: center;
+    }
+    
+  }
 
-.phone{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 110px;
-}
-#call{
-    align-self: center;
-}
 
-.mail{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 110px;
-}
-
-#write{
-    align-self: center;
-}
-
-.sns{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 110px;
-}
-#follow{
-    align-self:center;
-}
-.sns_image{
-    align-self: center;
-}
 
