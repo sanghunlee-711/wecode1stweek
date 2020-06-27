@@ -204,6 +204,8 @@ a{
     align-items: center;
     justify-content: space-evenly;
 }
+
+
 .footer{
     padding-top: 3%;
     display: grid;
@@ -506,5 +508,7 @@ a{
     .sns_image{
         align-self: center;
     }
-    
+    .footer{
+        bottom: 0px;
+    }
   }

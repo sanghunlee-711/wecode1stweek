@@ -1,0 +1,234 @@
+
+.content{
+    background-color: #f1f2f6;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+
+.canvas{
+    width: 500px;
+    height: 500px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.controls{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.controls .controls_btns{
+    margin-bottom: 30px;
+}
+
+.controls_btns button{
+    all: unset;
+    cursor: pointer;
+    background-color: whitesmoke;
+    padding: 5px 0px;
+    width: 80px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background-color: 1px solid rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 8px;
+}
+
+.controls_btns button:active{
+    transform: scale(0.98);
+}
+
+.controls .controls_colors{
+    display: flex;
+}
+
+.controls_colors .controls_color{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+}
+
+.controls .controls_range{
+    margin-bottom: 20px;
+}
+
+/* for lay-out*/
+
+.grid{
+    display:grid;
+    background-color: white; 
+    height: 100vh;
+    grid-template:
+    "head_wrapper head_wrapper" 0.5fr
+    "content content" 4fr
+    "footer footer" 0.5fr
+    ;
+}
+
+.head_wrapper{
+    position: fixed;
+    top:0%;
+    width: 99%;
+    height: 20%;
+    margin-bottom: 1%;
+    grid-area: head_wrapper;
+    align-items: center;
+}
+.head_wrapper_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+}
+
+.home{
+    text-decoration: none;
+    color: black;
+}
+    
+    
+.home:hover{
+color: darksalmon;
+background-color: whitesmoke;
+
+}
+
+.name{
+    grid-area: name;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+}
+
+#name_link:hover{
+    color: darksalmon;
+    background-color: whitesmoke
+}
+
+.nav{
+    grid-area: nav;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    top: 0%;
+    left: 0%;
+}
+
+
+#menu ul li {
+    list-style: none;
+    color: bisque;
+    background-color: white;
+    float: left;
+    line-height: 12px;
+    vertical-align: middle;
+    text-align: center;
+    left: 0%;
+    
+}
+
+#menu .menu_link {
+    text-decoration: cornflowerblue;
+    color:black;
+    display: flex;
+    width: 80px; /*얘는 수정 안되겠다*/
+    font-size: 70%;
+    justify-content: space-between;
+    align-content: flex-end;
+}
+
+#menu .menu_link:hover{
+    color: darksalmon;
+    background-color: whitesmoke;
+}
+
+
+.footer{
+    padding-top: 3%;
+    display: grid;
+    font-size: 10px;
+    grid-area:footer;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif; 
+    grid-template: 
+    "copy_right contact"
+}
+.copy_right{
+    grid-area:copy_right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+
+.contact{
+    grid-area:contact;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    
+}
+
+.phone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+}
+#call{
+    align-self: center;
+}
+
+.mail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+}
+
+#write{
+    align-self: center;
+}
+
+.sns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 110px;
+}
+#follow{
+    align-self:center;
+}
+.sns_image{
+    align-self: center;
+}
