@@ -30,6 +30,7 @@ function startPainting(){
     painting = true;
 }
 
+
 function onMouseMove(event){
     const x = event.offsetX;
     const y = event.offsetY;
